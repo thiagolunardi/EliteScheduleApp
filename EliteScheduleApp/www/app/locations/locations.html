@@ -1,0 +1,16 @@
+<ion-view title="Locations" ng-controller="locationsCtrl as vm">
+	<ion-content class="has-header">
+		<ion-list>
+			<ion-item class="item-button-right" ng-repeat="location in vm.locations">
+				{{location.name}}
+				
+				<div class="buttons">
+					<a class="button button-light" ng-href="#/app/location-map/{{location.id}}">
+						<i class="icon ion-ios-location"></i>
+					</a>
+				</div>
+				
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
